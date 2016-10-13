@@ -1,0 +1,67 @@
+{% set hobbies_active='active' %}
+{% extends './layout/layout.html' %}
+
+{% block title %}Hobbies{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="card">
+        <h1>Hobbies</h1>
+        <ul>
+            <li>Reading Books
+                <div class="photopile-wrapper">
+                    <ul class="photopile">
+                        {% for book in hobbies.books %}
+                        <li>
+                            <a href="img/hobbies/{{ book[0] }}">
+                                <img src="img/hobbies/thumbnail/{{ book[0] }}" alt="{{ book[1] }}"/>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div> <!-- /.photopile-wrapper-->
+            </li>
+            <li>Watching Movies
+                <div class="photopile-wrapper">
+                    <ul class="photopile">
+                        {% for movie in hobbies.movies %}
+                        <li>
+                            <a href="img/hobbies/{{ movie[0] }}">
+                                <img src="img/hobbies/thumbnail/{{ movie[0] }}" alt="{{ movie[1] }}"/>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div> <!-- /.photopile-wrapper-->
+            </li>
+            <li>Hacking Gadgets
+                <div class="photopile-wrapper">
+                    <ul class="photopile">
+                        {% for gadget in hobbies.gadgets %}
+                        <li>
+                            <a href="img/hobbies/{{ gadget[0] }}">
+                                <img src="img/hobbies/thumbnail/{{ gadget[0] }}" alt="{{ gadget[1] }}"/>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div> <!-- /.photopile-wrapper-->
+            </li>
+            <li>Playing Lego with my sons
+                <div class="photopile-wrapper">
+                    <ul class="photopile">
+                        {% for lego in hobbies.legos %}
+                        <li>
+                            <a href="img/hobbies/{{ lego[0] }}">
+                                <img src="img/hobbies/thumbnail/{{ lego[0] }}" alt="{{ lego[1] }}"/>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div> <!-- /.photopile-wrapper-->
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+{% endblock %}

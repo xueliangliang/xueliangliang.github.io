@@ -1,0 +1,108 @@
+{
+    "hobbies": {
+        "books": [
+            [
+                "book1.jpg",
+                "The 7 Habits of Highly Effective People"
+            ],
+            [
+                "book2.jpg",
+                "Effective Java"
+            ],
+            [
+                "book3.jpg",
+                "The Pragmatic Programmer"
+            ],
+            [
+                "book4.jpg",
+                "Steve Jobs"
+            ],
+            [
+                "book5.jpg",
+                "Joel on Software"
+            ],
+            [
+                "book6.jpg",
+                "Design Patterns"
+            ],
+            [
+                "book7.jpg",
+                "中国历代政治得失"
+            ],
+            [
+                "book8.jpg",
+                "南渡北归"
+            ]
+        ],
+        "movies": [
+            [
+                "movie1.jpg",
+                "God Father"
+            ],
+            [
+                "movie2.jpg",
+                "Gone with the wind"
+            ],
+            [
+                "movie3.jpg",
+                "2 Fast 2 Furious"
+            ],
+            [
+                "movie4.jpg",
+                "Titanic"
+            ],
+            [
+                "movie5.jpg",
+                "Dances with Wolves"
+            ],
+            [
+                "movie6.jpg",
+                "The Post Man"
+            ]
+        ],
+        "gadgets": [
+            [
+                "gadget1.jpg",
+                "OpenWRT with LCD"
+            ],
+            [
+                "gadget2.jpg",
+                "OpenWRT"
+            ],
+            [
+                "gadget3.jpg",
+                "Raspberry Pi"
+            ],
+            [
+                "gadget4.jpg",
+                "Raspberry Pi Robot"
+            ],
+            [
+                "gadget5.jpg",
+                "Raspberry Pi Robot"
+            ]
+        ],
+        "legos": [
+            [
+                "lego.jpg",
+                "Lego"
+            ],
+            [
+                "lego1.jpg",
+                "Younger son with Lego"
+            ],
+            [
+                "lego2.jpg",
+                "Younger son's Lego workbench"
+            ],
+            [
+                "lego3.jpg",
+                "Lego City"
+            ],
+            [
+                "lego4.jpg",
+                "Mega Lego"
+            ]
+        ]
+    }
+}
