@@ -1,3 +1,5 @@
+# ignore vim buffer file
+.*.swp
 # Mac .DS_Store
 .DS_Store
 # Logs
