@@ -45,6 +45,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body {
+  font-family: 'PT Serif', serif; }
+
 header {
   padding: 5px 0;
   background: url(../img/tile.jpg);
@@ -76,10 +79,9 @@ header {
     display: inline-block;
     width: 150px;
     padding: 15px 20px;
-    font-family: 'Amita', cursive;
-    font-size: 22px;
+    font-family: 'Oleo Script', cursive;
+    font-size: 24px;
     font-weight: bold;
-    -webkit-text-stroke: 1px black;
     text-shadow: 2px 1px 1px rgba(255, 0, 0, 0.6); }
     .nav nav li a:hover {
       text-decoration: underline; }
@@ -92,12 +94,14 @@ main {
 
 footer {
   margin-top: 50px;
-  padding: 30px 0;
-  border-top: solid 2px #819FF7; }
+  padding: 30px 0; }
+  footer .seperator {
+    height: 2px;
+    background-color: #819FF7;
+    box-shadow: 1px 1px 1px #888888; }
 
 a,
-a:visited,
-a:hover {
+a:visited {
   text-decoration: none;
   color: #819FF7; }
 

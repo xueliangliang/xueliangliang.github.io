@@ -9,8 +9,12 @@
   "author": "Xue Liangliang",
   "license": "ISC",
   "devDependencies": {
+    "compass-importer": "^0.4.1",
     "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-data": "^1.2.1",
     "gulp-sass": "^2.3.2",
+    "gulp-swig": "^0.8.0",
     "node-reset-scss": "^1.0.1"
   }
 }
