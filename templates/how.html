@@ -1,0 +1,37 @@
+{% set how_active='active' %}
+{% extends './layout/layout.html' %}
+
+{% block title %}How?{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="card">
+        <h1>How?</h1>
+        <p>
+        How was this website built? I followed some simple principles and make use of a lot of existing open source tools
+        </p>
+        <p>The principles are:</p>
+        <ul>
+            <li>Other People's ____</li>
+            <p> I used a lot other people's <u>library/tool</u></p>
+
+            <li>KISS Principle</li>
+            <p> Keep it simple and stupid. I seperate the website into different modules and layers, each module and layer only have a very simple responsibility. I used GulpJs to manage the packaging and building process</p>
+            <li>Kill two birds with one stone</li>
+            <p> Before this assignment, I didn't use GulpJs, I just took chance to learn how to use GulpJs to manage html frontend workflow.
+            <li>Think Out of Box</li>
+            <p> To think out of box, we need know where the box is. Initially I just want to use a tranditional website to display all the information. I happened to view TimeLineJs's website, I found it is more informative to show my portfolio. So now you see
+            the WOW effect.
+            </p>
+        </ul>
+        <p>The tools used:</p>
+        <ul>
+            <li><a href="http://sass-lang.com/">SASS</a></li>
+            <li><a href="http://etimeline.knightlab.com/">TimelineJS</a></li>
+            <li><a href="https://github.com/paularmstrong/swig">SWIG Template</a></li>
+            <li><a href="http://photopile-js.com/">PhotoPile</a></li>
+            <li><a href="http://gulpjs.com/">GulpJs</a></li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

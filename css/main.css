@@ -185,7 +185,15 @@ a:hover {
     margin-bottom: 15px; }
   .card ul {
     padding-left: 60px;
-    list-style-type: circle; }
+    list-style-type: circle;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    .card ul p {
+      margin-top: 8px;
+      font-size: 80%;
+      font-color: #ccc; }
   .card li {
     padding: 5px 3px;
     font-weight: bold; }
+  .card p {
+    line-height: 150%; }

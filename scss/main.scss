@@ -164,9 +164,19 @@ footer > .container {
     ul {
         padding-left: 60px;
         list-style-type: circle;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        p {
+            margin-top:8px;
+            font-size: 80%;
+            font-color: #ccc;
+        }
     }
     li {
         padding: 5px 3px;
         font-weight: bold;
+    }
+    p {
+        line-height: 150%;
     }
 }
