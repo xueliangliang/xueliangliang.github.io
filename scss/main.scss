@@ -44,6 +44,7 @@ header {
             text-shadow: 2px 1px 1px $default-text-shadow-color;
             a:hover {
                 text-decoration: underline;
+                text-shadow: -1px -1px 1px #E8D85F;
             }
         }
     }

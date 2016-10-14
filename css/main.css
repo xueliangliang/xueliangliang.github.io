@@ -84,7 +84,8 @@ header {
     font-weight: bold;
     text-shadow: 2px 1px 1px rgba(255, 0, 0, 0.6); }
     .nav nav li a:hover {
-      text-decoration: underline; }
+      text-decoration: underline;
+      text-shadow: -1px -1px 1px #E8D85F; }
 
 main {
   min-height: 400px; }
@@ -106,7 +107,7 @@ a:visited {
   color: #819FF7; }
 
 a:hover {
-  color: #0040FF; }
+  color: #295BCE; }
 
 .active a,
 .active a:visited,
