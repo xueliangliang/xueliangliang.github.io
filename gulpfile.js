@@ -25,7 +25,7 @@ gulp.task('sass',function() {
 gulp.task('templates', function() {
   gulp.src('./templates/*.html')
     .pipe(data(getJsonData))
-    .pipe(swig())
+    .pipe(swig({data:{now: Date.now()}}))
     .pipe(gulp.dest('.'));
 });
 
