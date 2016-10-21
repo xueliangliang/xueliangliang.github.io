@@ -83,6 +83,9 @@ header {
     font-size: 24px;
     font-weight: bold;
     text-shadow: 2px 1px 1px rgba(255, 0, 0, 0.6); }
+    .nav nav li a {
+      -webkit-transition: all 1s;
+      transition: all 1s; }
     .nav nav li a:hover {
       text-decoration: underline;
       text-shadow: -1px -1px 1px #E8D85F; }
