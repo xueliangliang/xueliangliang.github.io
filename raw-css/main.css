@@ -68,7 +68,10 @@ header {
     width: 70px;
     box-shadow: 2px 2px 3px #819FF7;
     padding: 1px;
-    border: 1px solid #819FF7; }
+    border: 1px solid #819FF7;
+    transition: all 1s; }
+    .nav .profile-image img:hover {
+      width: 80px; }
 
 .nav nav {
   display: inline-block;
@@ -85,10 +88,19 @@ header {
     text-shadow: 2px 1px 1px rgba(255, 0, 0, 0.6); }
     .nav nav li a {
       -webkit-transition: all 1s;
-      transition: all 1s; }
+      transition: all 1s;
+      border-bottom: 2px solid;
+      border-color: transparent; }
     .nav nav li a:hover {
-      text-decoration: underline;
-      text-shadow: -1px -1px 1px #E8D85F; }
+      text-shadow: -1px -1px 1px #E8D85F;
+      border-color: #295BCE;
+      box-shadow: 0 2px 1px -1px #E8D85F; }
+  .nav nav li.active a {
+    border-color: #295BCE;
+    box-shadow: 0 2px 1px -1px rgba(255, 0, 0, 0.6); }
+  .nav nav li.active a:hover {
+    border-color: #295BCE;
+    box-shadow: 0 2px 1px -1px #E8D85F; }
 
 main {
   min-height: 400px; }
@@ -111,11 +123,6 @@ a:visited {
 
 a:hover {
   color: #295BCE; }
-
-.active a,
-.active a:visited,
-.active a:hover {
-  text-decoration: underline; }
 
 .left {
   float: left; }

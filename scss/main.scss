@@ -23,6 +23,10 @@ header {
             box-shadow: 2px 2px 3px $lightblue;
             padding:1px;
             border:1px solid $lightblue;
+            transition: all 1s;
+            &:hover {
+                width: 80px;
+            }
         }
         text-align: left;
         vertical-align:middle;
@@ -45,10 +49,23 @@ header {
             a {
                 -webkit-transition: all 1s;
                 transition: all 1s;
+                border-bottom: 2px solid;
+                border-color: transparent;
             }
             a:hover {
-                text-decoration: underline;
                 text-shadow: -1px -1px 1px #E8D85F;
+                border-color: $blue;
+                box-shadow: 0 2px 1px -1px #E8D85F;
+            }
+        }
+        li.active {
+            a {
+                border-color: $blue;
+                box-shadow: 0 2px 1px -1px $default-text-shadow-color;
+            }
+            a:hover {
+                border-color: $blue;
+                box-shadow: 0 2px 1px -1px #E8D85F;
             }
         }
     }
@@ -77,13 +94,6 @@ a:visited
 }
 a:hover {
     color: $blue;
-}
-.active  {
-    a,
-    a:visited,
-    a:hover {
-        text-decoration: underline;
-    }
 }
 
 
