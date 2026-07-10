@@ -17,7 +17,11 @@ var timelineData = {
         {
             start_date: { year: 1981, month: 6, day: 25 },
             text: { headline: "Where was I born?", text: "I was born in Binhai County, Yancheng, Jiangsu, China." },
-            media: { url: "img/birthday.jpg" }
+            media: {
+                url: "img/timeline/yancheng-divisions.png",
+                caption: "Administrative divisions of Yancheng; Binhai County is the northern coastal county.",
+                credit: "Chk2011 / Wikimedia Commons, CC BY-SA 4.0"
+            }
         },
         {
             start_date: { year: 1981, month: 10, day: 3 },
@@ -33,7 +37,11 @@ var timelineData = {
         {
             start_date: { year: 1989, month: 7, day: 7 },
             text: { headline: "Move to Yancheng", text: "I moved to Yancheng with my parents and made many new friends." },
-            media: { url: "img/yanchengyixiao.jpg" }
+            media: {
+                url: "img/timeline/yancheng-location.svg",
+                caption: "Yancheng's location in Jiangsu Province.",
+                credit: "Tomchen1989 and NordNordWest / Wikimedia Commons, CC BY-SA 3.0"
+            }
         },
         {
             start_date: { year: 1989, month: 9, day: 1 },
@@ -63,7 +71,11 @@ var timelineData = {
             start_date: { year: 2004, month: 7, day: 27 },
             end_date: { year: 2007, month: 7, day: 19 },
             text: { headline: "First Job", text: "I started as a product developer at LGA Telecom Pte Ltd, focusing mainly on the open-source PABX system Asterisk." },
-            media: { url: "img/xll.jpg" }
+            media: {
+                url: "img/timeline/asterisk-logo.svg",
+                caption: "Asterisk, the open-source PBX platform I worked with in my first job.",
+                credit: "Marc Spencer / Digium; public-domain text logo"
+            }
         },
         {
             start_date: { year: 2006, month: 1 },
@@ -86,7 +98,11 @@ var timelineData = {
             start_date: { year: 2007, month: 7, day: 12 },
             end_date: { year: 2013, month: 11, day: 30 },
             text: { headline: "IT Consultant", text: "I started my second job as an IT consultant at THS Mobile Data Exchange Pte Ltd." },
-            media: { url: "img/xll.jpg" }
+            media: {
+                url: "img/timeline/programmer-at-work.jpg",
+                caption: "Software development at work.",
+                credit: "Crew / Wikimedia Commons, CC0"
+            }
         },
         {
             start_date: { year: 2008, month: 4, day: 18 },
