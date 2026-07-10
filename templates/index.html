@@ -4,5 +4,11 @@
 {% block title %}Home{% endblock %}
 
 {% block body %}
-<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1wGAbyCxMa8IzY26woRH0SocuYUC-SZ-TOubzqbbj9kg&font=Default&lang=en&initial_zoom=2&height=520' width='100%' height='520' frameborder='0'></iframe>
+<link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/3.9.3/css/timeline.css">
+<div id="timeline-embed" style="width: 100%; height: 520px"></div>
+<script src="https://cdn.knightlab.com/libs/timeline3/3.9.3/js/timeline.js"></script>
+<script src="js/timeline-data.js"></script>
+<script>
+    new TL.Timeline('timeline-embed', timelineData);
+</script>
 {% endblock %}
