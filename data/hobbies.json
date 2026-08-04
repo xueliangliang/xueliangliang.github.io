@@ -37,11 +37,11 @@
         "movies": [
             [
                 "movie1.jpg",
-                "God Father"
+                "The Godfather"
             ],
             [
                 "movie2.jpg",
-                "Gone with the wind"
+                "Gone with the Wind"
             ],
             [
                 "movie3.jpg",
@@ -57,7 +57,7 @@
             ],
             [
                 "movie6.jpg",
-                "The Post Man"
+                "The Postman"
             ]
         ],
         "gadgets": [
