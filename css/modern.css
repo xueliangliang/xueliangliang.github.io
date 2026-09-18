@@ -131,6 +131,11 @@ footer .separator {
     color: #3730a3;
 }
 
+#timeline-embed a[data-featherlight],
+.timeline-mobile__event a[data-featherlight] {
+    cursor: zoom-in;
+}
+
 @media (max-width: 767px) {
     .nav {
         flex-wrap: wrap;

@@ -59,6 +59,38 @@
         parent.appendChild(time);
     }
 
+    function enhanceImage(image) {
+        if (!image || image.closest('a[data-featherlight]')) {
+            return;
+        }
+        var link = document.createElement('a');
+        link.href = image.currentSrc || image.src;
+        link.setAttribute('data-featherlight', 'image');
+        link.setAttribute('aria-label', 'Open image: ' + (image.alt || 'Timeline image'));
+        image.parentNode.insertBefore(link, image);
+        link.appendChild(image);
+
+        if (window.jQuery && window.jQuery.fn.featherlight) {
+            window.jQuery(link).featherlight();
+        }
+    }
+
+    function enhanceTimelineImages() {
+        document.querySelectorAll('#timeline-embed img.tl-media-image, #timeline-mobile img').forEach(enhanceImage);
+    }
+
+    function watchTimelineImages() {
+        var timeline = document.querySelector('#timeline-embed');
+        if (!timeline || !window.MutationObserver) {
+            return;
+        }
+        new MutationObserver(enhanceTimelineImages).observe(timeline, {
+            childList: true,
+            subtree: true
+        });
+        enhanceTimelineImages();
+    }
+
     function addText(parent, tag, className, value) {
         var element = document.createElement(tag);
         element.className = className;
@@ -95,4 +127,6 @@
         }
         mobileTimeline.appendChild(card);
     });
+
+    watchTimelineImages();
 }());
