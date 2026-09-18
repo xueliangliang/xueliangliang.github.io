@@ -122,8 +122,13 @@ footer .separator {
     color: var(--modern-muted);
 }
 
-.contactme a:hover {
+.contactme a:hover,
+.contactme .github-link {
     color: var(--modern-accent);
+}
+
+.contactme .github-link:hover {
+    color: #3730a3;
 }
 
 @media (max-width: 767px) {
