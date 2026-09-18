@@ -267,11 +267,23 @@ footer .separator {
     }
 
     .timeline-mobile__event time {
-        display: block;
+        display: flex;
+        align-items: baseline;
+        gap: 8px;
         margin-bottom: 6px;
+    }
+
+    .timeline-mobile__year {
         color: var(--modern-accent);
-        font-size: 13px;
-        font-weight: 700;
+        font-size: 17px;
+        font-weight: 800;
+        letter-spacing: 0.02em;
+    }
+
+    .timeline-mobile__date {
+        color: var(--modern-muted);
+        font-size: 12px;
+        font-weight: 600;
     }
 
     .timeline-mobile__event h2 {

@@ -21,18 +21,45 @@
         return;
     }
 
-    function dateLabel(date) {
-        if (!date || !date.year) {
-            return '';
+    function dateParts(date) {
+        var source = date && date.data ? date.data : date;
+        if (!source || !source.year) {
+            return null;
         }
-        var parts = [date.year];
-        if (date.month) {
-            parts.push(String(date.month).padStart(2, '0'));
+        var detail = [];
+        if (source.month) {
+            detail.push(String(source.month).padStart(2, '0'));
         }
-        if (date.day) {
-            parts.push(String(date.day).padStart(2, '0'));
+        if (source.day) {
+            detail.push(String(source.day).padStart(2, '0'));
         }
-        return parts.join('-');
+        return {
+            year: String(source.year),
+            detail: detail.join('-')
+        };
+    }
+
+    function addDate(parent, startDate, endDate) {
+        var start = dateParts(startDate);
+        var end = dateParts(endDate);
+        var time = document.createElement('time');
+        var years = start ? start.year : '';
+        if (end && end.year !== years) {
+            years += ' — ' + end.year;
+        }
+        addText(time, 'span', 'timeline-mobile__year', years);
+
+        var details = [];
+        if (start && start.detail) {
+            details.push(start.detail);
+        }
+        if (end && end.detail) {
+            details.push(end.detail);
+        }
+        if (details.length) {
+            addText(time, 'span', 'timeline-mobile__date', details.join(' — '));
+        }
+        parent.appendChild(time);
     }
 
     function addText(parent, tag, className, value) {
@@ -55,9 +82,7 @@
     (timelineData.events || []).forEach(function (event) {
         var card = document.createElement('article');
         card.className = 'timeline-mobile__event';
-        var start = dateLabel(event.start_date);
-        var end = dateLabel(event.end_date);
-        addText(card, 'time', '', end ? start + ' — ' + end : start);
+        addDate(card, event.start_date, event.end_date);
 
         if (event.text) {
             addText(card, 'h2', '', event.text.headline);
