@@ -1,0 +1,134 @@
+/* Modern visual layer for the portfolio */
+:root {
+    --modern-bg: #f7f7f5;
+    --modern-surface: #ffffff;
+    --modern-text: #171717;
+    --modern-muted: #6b7280;
+    --modern-accent: #4f46e5;
+    --modern-accent-soft: #eef2ff;
+    --modern-border: #e5e7eb;
+    --modern-shadow: 0 4px 14px rgba(15, 23, 42, 0.10);
+}
+
+body {
+    background: var(--modern-bg);
+    color: var(--modern-text);
+    font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.94);
+    border-bottom: 1px solid var(--modern-border);
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+    backdrop-filter: blur(12px);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav .profile-image {
+    width: auto;
+    flex: 0 0 30%;
+}
+
+.nav nav {
+    width: auto;
+    flex: 1;
+}
+
+.nav nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav .profile-image img {
+    border: 2px solid var(--modern-surface);
+    box-shadow: var(--modern-shadow);
+}
+
+.nav nav li {
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    text-shadow: none;
+}
+
+.nav nav li a,
+.nav nav li a:hover,
+.nav nav li.active a,
+.nav nav li.active a:hover {
+    color: var(--modern-text);
+    border-color: transparent;
+    box-shadow: none;
+    text-shadow: none;
+    transition: color 160ms ease, background-color 160ms ease;
+}
+
+.nav nav li a:hover {
+    color: var(--modern-accent);
+    background: var(--modern-accent-soft);
+}
+
+.nav nav li.active a {
+    color: var(--modern-accent);
+    border-bottom-color: var(--modern-accent);
+}
+
+main {
+    color: var(--modern-text);
+}
+
+.card {
+    background: var(--modern-surface);
+    border: 1px solid var(--modern-border);
+    border-radius: 14px;
+    box-shadow: var(--modern-shadow);
+}
+
+.card h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--modern-text);
+}
+
+.card p,
+.card li {
+    color: #374151;
+}
+
+.card ul p {
+    color: var(--modern-muted);
+}
+
+a,
+a:visited {
+    color: var(--modern-accent);
+}
+
+a:hover {
+    color: #3730a3;
+}
+
+footer .separator {
+    background-color: var(--modern-border);
+    box-shadow: none;
+}
+
+.contactme a {
+    color: var(--modern-muted);
+}
+
+.contactme a:hover {
+    color: var(--modern-accent);
+}
+
+@media (max-width: 767px) {
+    .nav nav li {
+        width: auto;
+        padding: 12px 8px;
+    }
+}
