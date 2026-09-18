@@ -34,7 +34,13 @@
                 <div id="mylightbox" class="hidden">
                        <img src="img/xll.jpg" alt="Xue Liangliang">
                 </div>
-                <nav>
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="sr-only">Toggle navigation</span>
+                </button>
+                <nav id="site-menu">
                     <ul>
                         <li class="active" id="aboutme"><a href="index.html">About Me</a></li>
                         <li class="" id="hobbies"><a href="hobbies.html">Hobbies</a></li>
@@ -47,7 +53,8 @@
         <main>
         
 <link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/3.9.3/css/timeline.css">
-<div id="timeline-embed" style="width: 100%; height: 520px"></div>
+<div id="timeline-embed"></div>
+<div id="timeline-mobile" class="timeline-mobile" aria-label="Timeline"></div>
 <script src="https://cdn.knightlab.com/libs/timeline3/3.9.3/js/timeline.js"></script>
 <script src="js/timeline-data.js"></script>
 <script>
@@ -88,5 +95,6 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-85672774-1','auto');ga('send','pageview');
         </script>
+        <script src="js/mobile.js"></script>
     </body>
 </html>

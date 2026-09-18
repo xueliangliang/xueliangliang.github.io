@@ -34,7 +34,13 @@
                 <div id="mylightbox" class="hidden">
                        <img src="img/xll.jpg" alt="Xue Liangliang">
                 </div>
-                <nav>
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="sr-only">Toggle navigation</span>
+                </button>
+                <nav id="site-menu">
                     <ul>
                         <li class="{{aboutme_active}}" id="aboutme"><a href="index.html">About Me</a></li>
                         <li class="{{hobbies_active}}" id="hobbies"><a href="hobbies.html">Hobbies</a></li>
@@ -80,5 +86,6 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-85672774-1','auto');ga('send','pageview');
         </script>
+        <script src="js/mobile.js"></script>
     </body>
 </html>
