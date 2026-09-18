@@ -43,21 +43,18 @@
         var start = dateParts(startDate);
         var end = dateParts(endDate);
         var time = document.createElement('time');
-        var years = start ? start.year : '';
-        if (end && end.year !== years) {
-            years += ' — ' + end.year;
-        }
-        addText(time, 'span', 'timeline-mobile__year', years);
 
-        var details = [];
-        if (start && start.detail) {
-            details.push(start.detail);
+        function fullDate(date) {
+            return date ? date.year + (date.detail ? ' ' + date.detail : '') : '';
         }
-        if (end && end.detail) {
-            details.push(end.detail);
-        }
-        if (details.length) {
-            addText(time, 'span', 'timeline-mobile__date', details.join(' — '));
+
+        if (end) {
+            addText(time, 'span', 'timeline-mobile__range', fullDate(start) + ' ~ ' + fullDate(end));
+        } else {
+            addText(time, 'span', 'timeline-mobile__year', start ? start.year : '');
+            if (start && start.detail) {
+                addText(time, 'span', 'timeline-mobile__date', start.detail);
+            }
         }
         parent.appendChild(time);
     }
